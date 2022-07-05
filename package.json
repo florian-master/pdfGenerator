@@ -2,7 +2,8 @@
   "name": "pdfgenerator",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "sass ./src/assets/styles/style.scss ./src/assets/styles/bootstrap.css && vite",
+    "watch-style": "sass --watch ./src/assets/styles/style.scss:./src/assets/styles/bootstrap.css",
     "build": "run-p type-check build-only",
     "preview": "vite preview --port 4173",
     "build-only": "vite build",
